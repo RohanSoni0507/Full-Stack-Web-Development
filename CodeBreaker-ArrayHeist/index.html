@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Breaker – The Array Heist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔐 Code Breaker – The Array Heist</h1>
+  <div id="game-container">
+    <!-- Array Display -->
+    <div id="array-display"></div>
+
+    <!-- Control Panel -->
+    <div id="controls">
+      <div>
+        <label>Index:</label>
+        <input type="number" id="index-input" min="0" max="9">
+      </div>
+      <div>
+        <label>Value:</label>
+        <input type="number" id="value-input" min="0" max="9">
+      </div>
+      <div>
+        <label>Pattern:</label>
+        <input type="text" id="pattern-input" placeholder="e.g. 2,1,4">
+      </div>
+      <div class="buttons">
+        <button onclick="insertAtIndex()">Insert</button>
+        <button onclick="deleteAtIndex()">Delete</button>
+        <button onclick="searchPattern()">Search</button>
+        <button onclick="resetArray()">Reset</button>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+    <p id="feedback"></p>
+    <p id="secret-pattern"></p>
+    <p id="timer"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
